@@ -24,9 +24,10 @@ public class Main {
                 ProviderEnum.SECOND,externalAdapter
         );
 
-        Product product = providers.get(ProviderEnum.FIRST).getProduct("product");
+        Product productFirstProvider = providers.get(ProviderEnum.FIRST).getProduct("product");
+        Product productSecondProvider = providers.get(ProviderEnum.SECOND).getProduct("product");
 
-
-        System.out.println(product.getCode());
+        System.out.println(productFirstProvider);
+        System.out.println(productSecondProvider);
     }
 }

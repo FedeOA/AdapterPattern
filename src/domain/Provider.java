@@ -1,13 +1,13 @@
-package dto.provider;
+package domain;
 
-public class ProviderDto {
+public class Provider {
 
     private String name;
     private String code;
     private String location;
     private String country;
 
-    public ProviderDto(String name, String code, String location, String country) {
+    public Provider(String name, String code, String location, String country) {
         this.name = name;
         this.code = code;
         this.location = location;
@@ -44,5 +44,15 @@ public class ProviderDto {
 
     public void setCountry(String country) {
         this.country = country;
+    }
+
+    @Override
+    public String toString() {
+        return "Provider{" +
+                "name='" + name + '\'' +
+                ", code='" + code + '\'' +
+                ", location='" + location + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 }

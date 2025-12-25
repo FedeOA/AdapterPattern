@@ -1,6 +1,6 @@
 package service.impl;
 
-import dto.provider.ProviderDto;
+import domain.Provider;
 import dto.provider.req.InternalProviderRequestDto;
 import dto.provider.resp.InternalProviderResponseDto;
 import service.InternalProvider;
@@ -8,7 +8,7 @@ import service.InternalProvider;
 
 public class FirstProviderServiceImpl implements InternalProvider {
 
-    private final static ProviderDto firstProvider = new ProviderDto("First Provider","A1","location 1","Argentina");
+    private final static Provider firstProvider = new Provider("First Provider","A1","location 1","Argentina");
 
     @Override
     public InternalProviderResponseDto getPrice(InternalProviderRequestDto product) {

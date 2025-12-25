@@ -1,17 +1,15 @@
 package domain;
 
-import dto.provider.ProviderDto;
-
 public class Product {
 
     private String code;
     private String name;
     private double price;
-    private ProviderDto provider;
+    private Provider provider;
 
     public Product(){}
 
-    public Product(String code, String name, double price, ProviderDto provider) {
+    public Product(String code, String name, double price, Provider provider) {
         this.code = code;
         this.name = name;
         this.price = price;
@@ -30,7 +28,7 @@ public class Product {
         return price;
     }
 
-    public ProviderDto getProvider() {
+    public Provider getProvider() {
         return provider;
     }
 
@@ -46,7 +44,17 @@ public class Product {
         this.price = price;
     }
 
-    public void setProvider(ProviderDto provider) {
+    public void setProvider(Provider provider) {
         this.provider = provider;
+    }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                ", provider=" + provider +
+                '}';
     }
 }

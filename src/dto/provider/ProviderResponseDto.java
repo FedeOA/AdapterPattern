@@ -1,20 +1,22 @@
 package dto.provider;
 
+import domain.Provider;
+
 public abstract class ProviderResponseDto {
 
-    protected ProviderDto provider;
+    protected Provider provider;
     protected String productName;
     protected double price;
     protected String code;
 
-    public ProviderResponseDto(ProviderDto provider, String productName, double price, String code) {
+    public ProviderResponseDto(Provider provider, String productName, double price, String code) {
         this.provider = provider;
         this.productName = productName;
         this.price = price;
         this.code = code;
     }
 
-    public ProviderDto getProvider() {
+    public Provider getProvider() {
         return provider;
     }
 
@@ -30,7 +32,7 @@ public abstract class ProviderResponseDto {
         return code;
     }
 
-    public void setProvider(ProviderDto provider) {
+    public void setProvider(Provider provider) {
         this.provider = provider;
     }
 
