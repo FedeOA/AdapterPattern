@@ -11,7 +11,7 @@ public class FirstProviderServiceImpl implements InternalProvider {
     private final static Provider firstProvider = new Provider("First Provider","A1","location 1","Argentina");
 
     @Override
-    public InternalProviderResponseDto getPrice(InternalProviderRequestDto product) {
+    public InternalProviderResponseDto getPrice(InternalProviderRequestDto request) {
 
         System.out.println("Call internal provider Service");
 
