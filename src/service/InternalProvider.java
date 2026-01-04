@@ -5,5 +5,5 @@ import dto.provider.resp.InternalProviderResponseDto;
 
 public interface InternalProvider {
 
-    InternalProviderResponseDto getPrice(InternalProviderRequestDto product);
+    InternalProviderResponseDto getPrice(InternalProviderRequestDto request);
 }
