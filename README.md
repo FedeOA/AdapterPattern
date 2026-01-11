@@ -3,6 +3,8 @@
 A simple and didactic example of the **Adapter Structural Design Pattern**, implemented in **Java**.  
 The goal is to demonstrate how to adapt a class with an incompatible interface so it can be used by an existing client.
 
+This example illustrates how various external services from restaurant providers are adapted to our business interface, enabling us to seamlessly obtain the products.
+
 ---
 
 ## 🧠 What is the Adapter Pattern?
